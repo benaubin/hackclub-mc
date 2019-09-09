@@ -43,11 +43,12 @@ export function IndexPage(props: {}) {
         color: #555;
 
         border-radius: 7px;
+        box-sizinng: border-box;
 
         margin: 10vh auto;
 
         width: 90vw;
-        max-width: 400px;
+        max-width: 480px;
 
         padding: 40px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
