@@ -20,7 +20,7 @@ class MyApp extends App {
     return <>
       <Head>
           <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet"></link>
-          <style>{`
+          <style jsx global>{`
               body {
                 font-family: "Cabin", sans-serif;
                 background-color: rgb(206, 41, 60);
