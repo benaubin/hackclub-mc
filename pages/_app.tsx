@@ -1,0 +1,40 @@
+import React from 'react'
+import App from 'next/app'
+import Head from "next/head";
+
+class MyApp extends App {
+  // Only uncomment this method if you have blocking data requirements for
+  // every single page in your application. This disables the ability to
+  // perform automatic static optimization, causing every page in your app to
+  // be server-side rendered.
+  //
+  // static async getInitialProps(appContext) {
+  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
+  //   const appProps = await App.getInitialProps(appContext);
+  //
+  //   return { ...appProps }
+  // }
+
+  render() {
+    const { Component, pageProps } = this.props
+    return <>
+      <Head>
+          <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet"></link>
+          <style>{`
+              body {
+                font-family: "Cabin", sans-serif;
+                background-color: rgb(206, 41, 60);
+                background-image: linear-gradient(rgb(228, 115, 45), rgb(206, 41, 143));
+                background-size: 100vw 100vh;
+
+
+                font-weight: 400;
+              }
+          `}</style>
+        </Head>
+      <Component {...pageProps} />
+    </>;
+  }
+}
+
+export default MyApp
