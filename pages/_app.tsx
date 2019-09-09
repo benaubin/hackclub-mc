@@ -19,19 +19,20 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
     return <>
       <Head>
-          <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet"></link>
-          <style jsx global>{`
-              body {
-                font-family: "Cabin", sans-serif;
-                background-color: rgb(206, 41, 60);
-                background-image: linear-gradient(rgb(228, 115, 45), rgb(206, 41, 143));
-                background-size: 100vw 100vh;
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <style dangerouslySetInnerHTML={{__html: `
+            body {
+              font-family: "Cabin", sans-serif;
+              background-color: rgb(206, 41, 60);
+              background-image: linear-gradient(rgb(228, 115, 45), rgb(206, 41, 143));
+              background-size: 100vw 100vh;
+              background-attachment: fixed;
 
-
-                font-weight: 400;
-              }
-          `}</style>
-        </Head>
+              font-weight: 400;
+            }
+        `}}/>
+      </Head>
       <Component {...pageProps} />
     </>;
   }

@@ -23,6 +23,8 @@ export function IndexPage(props: {}) {
         If you're into coding, software, games, or anything else, and you want to make them, you're in the right place.
       </p>
 
+      <h4>Resources:</h4>
+
       <ul>
         <li>
           <a href="https://hackclub.com">
@@ -34,6 +36,11 @@ export function IndexPage(props: {}) {
             GitHub
           </a>
         </li>
+        <li>
+          <a href="https://github.com/EAYA-Hack-Club/club-website/">
+            Source Code
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -43,7 +50,7 @@ export function IndexPage(props: {}) {
         color: #555;
 
         border-radius: 7px;
-        box-sizinng: border-box;
+        box-sizing: border-box;
 
         margin: 10vh auto;
 
@@ -62,6 +69,11 @@ export function IndexPage(props: {}) {
       h3 {
         font-weight: 400;
         margin: 4px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
       }
     `}</style>
   </div>;
