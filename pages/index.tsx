@@ -1,5 +1,10 @@
+import Head from "next/head";
+
 export function IndexPage(props: {}) {
   return <div>
+    <Head>
+      <title>HackClub</title>
+    </Head>
     <div className="card">
       <h1>Hack Club</h1>
       <h3>At EA Young Academy</h3>

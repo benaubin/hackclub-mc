@@ -8,8 +8,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-
-    "export": "next export -o docs"
+    "export": "rm -rf _next && next export && mv ./out/* . && rm -rf out",
+    "static": "npm run build && npm run export"
   },
   "author": "Ben Aubin (@benaubin)",
   "license": "MIT",
