@@ -24,8 +24,8 @@ class MyApp extends App {
         <style dangerouslySetInnerHTML={{__html: `
             body {
               font-family: "Cabin", sans-serif;
-              background-color: rgb(206, 41, 60);
-              background-image: linear-gradient(rgb(228, 115, 45), rgb(206, 41, 143));
+              background-color: #69A343;
+              background-image: linear-gradient(#69A343, #00D360);
               background-size: 100vw 100vh;
               background-attachment: fixed;
 

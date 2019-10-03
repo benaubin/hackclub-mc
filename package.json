@@ -1,7 +1,7 @@
 {
-  "name": "eaya-hack-club-website",
+  "name": "hack-club-mc-website",
   "version": "1.0.0",
-  "description": "A Website for EAYA Hack Club",
+  "description": "A Website for Hack Club's Minecraft Server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
